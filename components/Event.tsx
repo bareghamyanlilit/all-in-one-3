@@ -33,13 +33,13 @@ export function Event({ openEnvelope }: any) {
 
   return (
     <div
-      className={`${openEnvelope ? "block" : "hidden"} text-center overflow-hidden  FontOptimaModoki  bg-[#FFFDFB]`}
+      className={`${openEnvelope ? "block" : "hidden"} text-center overflow-hidden  FontArTarumianBarakU  bg-[#FFFDFB]`}
     >
       {/* music button */}
-      {/* <div>
+      <div>
         <button
           onClick={() => setIsPlaying(!isPlaying)}
-          className="fixed z-10 p-1  rounded-2xl bg-[#4a4a4a81]  right-7 top-7 w-15  h-15 flex justify-center items-center"
+          className="fixed z-10 p-1  rounded-2xl border-2 bg-[#FFFDFB]  right-7 top-7 w-20  h-20 flex justify-center items-center"
         >
           <Image
             src="/icon2.png"
@@ -51,24 +51,24 @@ export function Event({ openEnvelope }: any) {
         </button>
 
         <MusicPlayer isPlaying={isPlaying} />
-      </div> */}
+      </div>
 
       <div className="m-auto relative h-max max-w-md ">
         {/* arajin mas */}
-        <div>
+        <div className="font-bold">
           <Image
             src="/img1.jpg"
             alt="icon1"
             width={500}
             height={500}
-            className="w-full  object-cover "
+            className="w-[95%] ml-0 h-screen rounded-br-[220px]  object-cover "
           />
-          <div className=" absolute top-20 left-5 flex items-center font-bold tracking-[25%]  justify-center ">
-            <h2 className="text-[32px] mb-20 text-[#FFFDFB] -mr-15">
+          <div className=" absolute top-20 left-5 flex items-center tracking-[25%]  justify-center ">
+            <h2 className="text-2xl mb-20 text-[#FFFDFB] -mr-15">
               {name[0]}
             </h2>
-            <span className="text-3xl text-[#FFFDFB] "> և </span>
-            <h2 className="text-[32px] mt-20 text-[#FFFDFB]  -ml-15">
+            <span className="text-3xl  text-[#FFFDFB] "> և </span>
+            <h2 className="text-2xl mt-20 text-[#FFFDFB]  -ml-15">
               {name[1]}
             </h2>
           </div>
@@ -77,13 +77,10 @@ export function Event({ openEnvelope }: any) {
         {/* 2rd mas teqster */}
         <div className=" px-5 mt-15 tracking-[10%] flex items-center justify-between">
           <div>
-            <motion.h3 {...anim} className=" text-sovorakan relative text-xl">
+            <motion.h3 {...anim} className=" text-sovorakan text-2xl">
               Սիրելիներս
             </motion.h3>
-            <motion.p
-              {...anim}
-              className=" text-sovorakan relative  text-xl mt-10"
-            >
+            <motion.p {...anim} className=" text-sovorakan  text-2xl mt-10 FontArTarumianBarakU">
               {txt1}
             </motion.p>
           </div>
@@ -93,12 +90,12 @@ export function Event({ openEnvelope }: any) {
             width={500}
             height={500}
             alt="jamanak"
-            className="w-[40%] mr-0"
+            className="w-[40%] mr-0 opacity-45"
           />
         </div>
 
         {/* errord mas vazox tox + nkar */}
-        <div className=" mt-20 relative w-full  text-2xl text-vrayi ">
+        <div className=" mt-20 relative w-full  text-3xl text-vrayi ">
           <div className="FontBraindDoctor whitespace-nowrap animate-marquee-2 -rotate-2  -translate-x-full">
             Սիրում եմ Սիրում եմ Սիրում եմ Սիրում եմ Սիրում եմ Սիրում եմ Սիրում
             եմ Սիրում եմ Սիրում եմ Սիրում եմ Սիրում եմ Սիրում եմ Սիրում եմ
@@ -139,7 +136,7 @@ export function Event({ openEnvelope }: any) {
             Սիրում եմ Սիրում եմ Սիրում եմ Սիրում եմ Սիրում եմ Սիրում եմ Սիրում
             եմ
           </div>
-          <div className="px-5 my-15">
+          <div className="px-5 my-20">
             <Image
               src="/img2.jpg"
               width={500}
@@ -191,7 +188,7 @@ export function Event({ openEnvelope }: any) {
         </div>
 
         {/* calendar */}
-        <div className="px-5 my-15">
+        <div className=" my-30">
           <Image
             src="/calendar.png"
             width={500}
@@ -201,11 +198,10 @@ export function Event({ openEnvelope }: any) {
           />
         </div>
 
-
         <Program />
 
         {/* errord mas vazox tox + nkar */}
-        <div className=" mt-30 relative w-full font-bold  text-2xl text-vrayi ">
+        <div className=" mt-30 relative w-full font-bold  text-3xl text-vrayi ">
           <div className="FontBraindDoctor whitespace-nowrap animate-marquee-2 -rotate-2  -translate-x-full">
             Սիրում եմ Սիրում եմ Սիրում եմ Սիրում եմ Սիրում եմ Սիրում եմ Սիրում
             եմ Սիրում եմ Սիրում եմ Սիրում եմ Սիրում եմ Սիրում եմ Սիրում եմ
@@ -246,7 +242,7 @@ export function Event({ openEnvelope }: any) {
             Սիրում եմ Սիրում եմ Սիրում եմ Սիրում եմ Սիրում եմ Սիրում եմ Սիրում
             եմ
           </div>
-          <div className="px-10 my-15 h-max relative mb-55">
+          <div className="px-10 my-20 h-max relative mb-60">
             <Image
               src="/img4.jpg"
               width={500}
@@ -254,7 +250,7 @@ export function Event({ openEnvelope }: any) {
               alt="jamanak"
               className="w-[80%] "
             />
-            <p className="absolute  -bottom-40 text-2xl tracking-[20%] leading-16 text-end right-10">
+            <p className="absolute  -bottom-40 text-3xl tracking-[20%] leading-16 text-end right-10">
               {" "}
               {txt3}
             </p>
@@ -305,29 +301,20 @@ export function Event({ openEnvelope }: any) {
         <TimeBox />
 
         {/* erb asen teqst */}
-        <motion.p
-          {...anim}
-          className=" mb-20 text-sovorakan relative  text-2xl mt-10"
-        >
+        <motion.p {...anim} className="FontArTarumianBarakU mb-20 text-sovorakan  text-3xl mt-10">
           {txt4}
-          <span className=" absolute w-[200%] -z-1 text-4xl top-1/2 left-1/2 -translate-x-1/2  -translate-y-1/2 text-taki">
-            {txt4}
-          </span>
         </motion.p>
 
         {/* RSVP */}
         <AttendanceGuests />
 
         {/* dress code */}
-        <div className="mt-10">
+        <div className="mt-15">
           <motion.h3
             {...anim}
-            className="FontOptimaModoki font-bold relative text-[32px] "
+            className="FontArTarumianBarakU font-bold text-4xl "
           >
             Dress Code
-            <p className=" absolute w-max mx-auto -z-1 text-5xl top-2 left-1/2 -translate-x-1/2 text-[#5800001A]">
-              Dress Code
-            </p>
           </motion.h3>
 
           <Image
@@ -335,13 +322,14 @@ export function Event({ openEnvelope }: any) {
             alt="icon1"
             width={500}
             height={500}
-            className="w-[90%] mx-auto object-cover my-15 rounded-[150px] "
+            className="w-[90%] mx-auto object-cover mb-15 rounded-[150px] "
           />
 
-          <p className="FontOptimaModoki text-2xl tracking-widest mb-15">
+          <p className="FontArTarumianBarakU text-3xl tracking-widest mb-15">
             {txt2}
           </p>
         </div>
+        
         {/* sexanner */}
         <Tables />
       </div>

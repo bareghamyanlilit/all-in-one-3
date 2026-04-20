@@ -65,6 +65,17 @@
   
 }
 
+
+@font-face {
+  font-family:"ArTarumianBarakU" ;
+  src: url('/font/ArTarumianBarakU-Regular.ttf');
+}
+
+
+.FontArTarumianBarakU{
+  font-family: "ArTarumianBarakU";
+  
+}
 @font-face {
   font-family:"BraindDoctor" ;
   src: url('/font/BraindDoctor.otf');

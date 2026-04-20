@@ -20,8 +20,8 @@ export function Envelop({ openEnvelope, setOpenEnvelope }: any) {
         <div
           className={`rounded-xs absolute ${open ? " animate-bounceY z-50 w-70 h-45 " : ""} bg-[#FFF7EB] grid content-center gap-3 md:top-5 md:w-140 md:h-90 md:left-5 top-2.5 left-2.5  text-vrayi text-center text-base`}
         >
-          <p className="FontArmDecorativeU text-base">
-            Դուք հրավիրված եք մեր նշանադրությանը
+          <p className="FontArTarumianBarakU tracking-[10%] text-base">
+            Դուք հրավիրված եք մեր <br /> ՀԱՐՍԱՆԻՔԻՆ  
             <br />
             <span className="flex items-center justify-center gap-2">
               Կարեն
@@ -37,7 +37,7 @@ export function Envelop({ openEnvelope, setOpenEnvelope }: any) {
           </p>
           <button
             onClick={() => setOpenEnvelope(true)}
-            className="FontArmDecorativeU cursor-pointer bg-[#2F261D] py-1 px-2 rounded-[5px] w-max m-auto text-[#FFF7EB] "
+            className="FontArTarumianBarakU cursor-pointer bg-[#2F261D] py-1 px-2 rounded-[5px] w-max m-auto text-[#FFF7EB] "
           >
             Բացել
           </button>
