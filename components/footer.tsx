@@ -5,7 +5,7 @@ export function Footer() {
     <footer className="FontArTarumianBarakU bottom-0 py-10 text-xl text-center text-[#FFFDFB]  bg-[#2F261D] ">
       
       <Link href="https://www.instagram.com/siteup.am/">
-        <p className="mt-2 text-xl">
+        <p className="mt-2 text-2xl">
           Պատրաստվել է <span className="underline">siteup.am</span> -ի  կողմից 
         </p>
       </Link>

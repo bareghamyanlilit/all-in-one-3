@@ -1,4 +1,5 @@
 "use client";
+import { name } from "@/data/data";
 import Image from "next/image";
 import { useState } from "react";
 
@@ -20,11 +21,11 @@ export function Envelop({ openEnvelope, setOpenEnvelope }: any) {
         <div
           className={`rounded-xs absolute ${open ? " animate-bounceY z-50 w-70 h-45 " : ""} bg-[#FFF7EB] grid content-center gap-3 md:top-5 md:w-140 md:h-90 md:left-5 top-2.5 left-2.5  text-vrayi text-center text-base`}
         >
-          <p className="FontArTarumianBarakU tracking-[10%] text-base">
-            Դուք հրավիրված եք մեր <br /> ՀԱՐՍԱՆԻՔԻՆ  
+          <p className="FontArTarumianBarakU leading-8 tracking-[10%] text-sm">
+            Դուք հրավիրված եք մեր <br /> հարսանիքին  
             <br />
             <span className="flex items-center justify-center gap-2">
-              Կարեն
+              {name[0]}
               <Image
                 src="/icon2.png"
                 alt="icon1"
@@ -32,7 +33,7 @@ export function Envelop({ openEnvelope, setOpenEnvelope }: any) {
                 height={500}
                 className=" w-5 object-cover "
               />{" "}
-              Լիկա
+              {name[1]}
             </span>
           </p>
           <button

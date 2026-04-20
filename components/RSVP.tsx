@@ -152,7 +152,7 @@ export default function AttendanceGuests() {
 
   return (
     <div className="mx-auto w-full max-w-3xl p-6">
-      <h1 className="text-2xl font-bold text-vrayi text-center mb-9">
+      <h1 className="text-3xl font-bold text-vrayi text-center mb-15">
         Հրավերի պատասխան
       </h1>
 

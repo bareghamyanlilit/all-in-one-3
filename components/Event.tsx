@@ -5,11 +5,8 @@ import { useEffect, useState } from "react";
 import { MusicPlayer } from "./music";
 import {
   anim,
-  calendar,
-  date,
   name,
   txt1,
-  txt1_1,
   txt2,
   txt3,
   txt4,
@@ -39,7 +36,7 @@ export function Event({ openEnvelope }: any) {
       <div>
         <button
           onClick={() => setIsPlaying(!isPlaying)}
-          className="fixed z-10 p-1  rounded-2xl border-2 bg-[#FFFDFB]  right-7 top-7 w-20  h-20 flex justify-center items-center"
+          className="fixed z-10 p-1  rounded-2xl bg-[#fffdfb2f]  right-7 top-7 w-20  h-20 flex justify-center items-center"
         >
           <Image
             src="/icon2.png"
