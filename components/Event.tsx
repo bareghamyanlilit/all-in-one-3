@@ -59,7 +59,7 @@ export function Event({ openEnvelope }: any) {
             alt="icon1"
             width={500}
             height={500}
-            className="w-[95%] ml-0 h-screen rounded-br-[220px]  object-cover "
+            className="w-[95%] ml-0 h-[90vh] rounded-br-[220px]  object-cover "
           />
           <div className=" absolute top-20 left-5 flex items-center tracking-[25%]  justify-center ">
             <h2 className="text-2xl mb-20 text-[#FFFDFB] -mr-15">
