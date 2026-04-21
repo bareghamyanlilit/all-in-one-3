@@ -16,6 +16,7 @@ import AttendanceGuests from "./RSVP";
 import { Program } from "./Program";
 import { Tables } from "./Tables";
 import { Footer } from "./footer";
+import { Calendar } from "./Calendar";
 
 export function Event({ openEnvelope }: any) {
   const [isPlaying, setIsPlaying] = useState(false);
@@ -133,15 +134,16 @@ export function Event({ openEnvelope }: any) {
             Սիրում եմ Սիրում եմ Սիրում եմ Սիրում եմ Սիրում եմ Սիրում եմ Սիրում
             եմ
           </div>
-          <div className="px-5 my-20">
+          <div className="px-10  my-20">
             <Image
               src="/img2.jpg"
               width={500}
               height={500}
               alt="jamanak"
-              className="w-full"
+              className=" object-cover relative z-10"
             />
-          </div>
+             </div>
+            <div className="w-full absolute z-1 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2  h-50 bg-[#2F261D] "></div>
           <div className="FontBraindDoctor whitespace-nowrap animate-marquee-2 -rotate-2  -translate-x-full">
             Սիրում եմ Սիրում եմ Սիրում եմ Սիրում եմ Սիրում եմ Սիրում եմ Սիրում
             եմ Սիրում եմ Սիրում եմ Սիրում եմ Սիրում եմ Սիրում եմ Սիրում եմ
@@ -185,7 +187,7 @@ export function Event({ openEnvelope }: any) {
         </div>
 
         {/* calendar */}
-        <div className=" my-30">
+        {/* <div className=" my-30">
           <Image
             src="/calendar.png"
             width={500}
@@ -193,7 +195,9 @@ export function Event({ openEnvelope }: any) {
             alt="jamanak"
             className="w-full"
           />
-        </div>
+        </div> */}
+        
+        <Calendar year={2026} month={10} highlightDay={25} />
 
         <Program />
 
